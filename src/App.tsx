@@ -1,7 +1,7 @@
+import Features from "./components/Features"
 import Grid from "./components/Grid"
 import HeroSection from "./components/HeroSection"
 import Navbar from "./components/Navbar"
-
 
 function App() {
 
@@ -10,6 +10,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <Grid />
+      <Features />
     </>
   )
 }
