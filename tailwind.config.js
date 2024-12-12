@@ -19,6 +19,9 @@ export default {
                           0 4px 6px rgba(34, 42, 53, 0.08), 
                           0 24px 108px rgba(47, 48, 55, 0.10)`,
       },
+      maskImage: {
+        "radial-custom": 'radial-gradient(33.875rem 33.875rem at calc(100% - 8.9375rem) 0, white 3%, transparent 70%)'
+      }
     },
   },
   plugins: [],

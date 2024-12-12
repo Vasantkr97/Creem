@@ -21,3 +21,12 @@ export const enableConstants = [
         subtext: "stay on top of your sales"
     }
 ]
+
+export const navLinks = [
+    'Contact', 'Pricing', 'Blog', 'Docs'
+]
+
+export const links =[
+    'Get started for free 🍦',
+    'Compare Pricing'
+]

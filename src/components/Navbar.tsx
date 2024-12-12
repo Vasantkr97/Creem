@@ -1,5 +1,6 @@
 import { RiCloseFill, RiMenu3Line } from "@remixicon/react";
 import { useState } from "react"
+import { navLinks } from "../Constants/Enable";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,16 +21,15 @@ const Navbar = () => {
                 <span className="font-medium text-white">Creem</span>
               </a>
               <div className="hidden md:flex items-center gap-1.5">
-                <a className="text-[hsl(22_100%_79.8%)] text-sm flex items-center justify-center rounded-full px-4 py-2 hover:bg-neutral-800 leading-[110%]">Contact</a>
-                <a className="text-[hsl(22_100%_79.8%)] text-sm flex items-center justify-center rounded-full px-4 py-2 hover:bg-neutral-800 leading-[110%]">Pricing</a>
-                <a className="text-[hsl(22_100%_79.8%)] text-sm flex items-center justify-center rounded-full px-4 py-2 hover:bg-neutral-800 leading-[110%]">Blog</a>
-                <a className="text-[hsl(22_100%_79.8%)] text-sm flex items-center justify-center rounded-full px-4 py-2 hover:bg-neutral-800 leading-[110%]">Docs</a>
+                {navLinks.map((link, ind) => (
+                  <a key={ind} className="text-[hsl(22_100%_79.8%)] text-sm flex items-center justify-center rounded-full px-4 py-2 hover:bg-neutral-800 leading-[110%]">{link}</a>
+                ))}
               </div>
             </div>
             
             {/* right: buttons hidden on mobile */}
             <div className="hidden md:flex items-center z-10">
-              <a className="relative z-10 flex border-[1px] border-neutral-100 text-sm text-white bg-neutral-900 hover:bg-black/90 px-4 py-2 rounded-full font-medium items-center justify-center">Login</a>
+              <a className="relative z-10 flex border-[1px] border-neutral-700 text-sm text-white bg-neutral-900 hover:bg-black/90 px-4 py-2 rounded-full font-medium items-center justify-center">Login</a>
             </div>
 
             {/* Hamburger */}
@@ -46,11 +46,10 @@ const Navbar = () => {
       
       {/* For Mobile Screen */}
       {isOpen && (
-          <div className="md:hidden flex flex-col space-y-6 mt-8 p-8">
-            <a>Contacts</a>
-            <a>Princing</a>
-            <a>Blog</a>
-            <a>Docs</a>
+          <div className="md:hidden bg-black flex flex-col space-y-6 mt-8 p-8">
+            {navLinks.map((link, ind) => (
+              <a key={ind}>{link}</a>
+            ))}
             <a className="relative z-10 flex border-[1px] border-neutral-100 text-sm text-white bg-neutral-900 hover:bg-black/90 px-4 py-2 rounded-full font-medium items-center justify-center">Login</a>
           </div>
         )}
