@@ -29,4 +29,10 @@ export const navLinks = [
 export const links =[
     'Get started for free 🍦',
     'Compare Pricing'
-]
+];
+
+export const FooterConstants = {
+    col1: ["Pricing", "Contact", "Blog"],
+    col2: ["Privacy Policy", "Terms of Service", "About Us"],
+    col3: ["Twitter", "Discord"]
+}
