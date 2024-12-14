@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="relative ">
         <div className="relative border-t z-0 border-neutral-800 px-8 pt-20 pb-32 bg-black">
             <div className="absolute inset-0 z-999999 flex items-center justify-center overflow-hidden bg-transparent">
-                <p className="text-center z-9999999 text-5xl md:text-9xl lg:text-[18rem] font-bold text-transparent bg-gradient-to-b from-neutral-950 via-neutral-800 to-[#FFBE98]/30 bg-clip-text">
+                <p className="text-center z-9999999 text-9xl md:text-[12rem] lg:text-[18rem] font-bold text-transparent bg-gradient-to-b from-neutral-950 via-neutral-800 to-[#FFBE98]/30 bg-clip-text">
                     CREEM
                 </p>
             </div>

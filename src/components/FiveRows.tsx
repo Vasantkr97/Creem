@@ -4,7 +4,7 @@ import Toggle from "./Toggle"
 
 const FiveRows = () => {
   return (
-    <div className="flex flex-col space-y-4 p-4">
+    <div className="flex flex-col space-y-4 p-4 bg-transparent">
       { enableConstants.map((item, index) => (
         <div key={index} className="flex justify-between items-center">
           <div className="flex space-x-2 items-center">
